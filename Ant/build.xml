@@ -15,7 +15,7 @@
       <arg value="-data" />
       <arg value="${drive.home}\Jenkins_Slave\workspace\IIB_COMPILE" />
       <arg value="-b" />
-      <arg value="${drive.home}\Jenkins\workspace\IIB_COMPILE\${bar.name}" />
+      <arg value="${drive.home}\Jenkins_Slave\workspace\IIB_COMPILE\${bar.name}" />
       <arg value="-a" />
       <arg value="${app.name}" />
       
