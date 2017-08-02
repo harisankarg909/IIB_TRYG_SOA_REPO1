@@ -57,7 +57,7 @@
 		   
 		   <echo message="${drive.home}\Users\RELIANCE\Desktop\mqsi\${bar.name}" />
 		   
-			<exec executable="${drive.home}\IBM\mqsi\mymqsideployscript.bat" spawn="false" logError="true" vmlauncher="false" failonerror="true" append="true">
+			<exec executable="${drive.home}\IBM\mqsi\batfile\mqsideployscript.bat" spawn="false" logError="true" vmlauncher="false" failonerror="true" append="true">
 				<arg value="${int.IIBoP.node}" />  
 				<arg value="-e" />
 			      <arg value="${int.IIBoP.server}" />
