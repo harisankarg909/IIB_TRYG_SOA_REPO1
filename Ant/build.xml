@@ -44,11 +44,11 @@
 	<target name="mqsiapply.baroverride">
 	   
 	    
-		<exec executable="${drive.home}\Users\RELIANCE\Desktop\mqsi\mymqsiapplybaroverride.bat" spawn="false" logError="true" vmlauncher="false" failonerror="true" append="true">
+		<exec executable="${drive.home}\IBM\mqsi\batfile\mqsiapplybaroverride.bat" spawn="false" logError="true" vmlauncher="false" failonerror="true" append="true">
 		      <arg value="-b" />
-		      <arg value="${drive.home}\Program Files (x86)\Jenkins\workspace\IIB_BarOverride\${bar.name}" />
+		      <arg value="${drive.home}\Jenkins_Slave\workspace\IIB_BarOVERRIDE\${bar.name}" />
 		      <arg value="-p" />
-		      <arg value="${drive.home}\Program Files (x86)\Jenkins\workspace\IIB_BarOverride\CallableFlowBARFiles\baroverride.properties\brokeroverride.properties" />
+		      <arg value="${drive.home}\Jenkins_Slave\workspace\IIB_BarOverride\TemperatureConverter\properties\brokeroverride.properties" />
 			  <arg value="-r" />
 		    </exec>
 	    <echo message="Completed overriding - ${bar.name} " />
