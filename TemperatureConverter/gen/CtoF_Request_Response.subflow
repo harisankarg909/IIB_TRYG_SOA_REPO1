@@ -12,7 +12,7 @@
       <nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.Output" location="330,50">
         <translation xmi:type="utility:TranslatableString" key="OutTerminal.Output%20Fahrenheit" bundleName="gen/CtoF_Request_Response" pluginId="TemperatureConverter"/>
       </nodes>
-      <nodes xmi:type="ComIbmMSLMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="172,88" mappingExpression="msl://{gen}#CtoF_Request_Response_Mapping_C_to_F">
+      <nodes xmi:type="ComIbmMSLMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="175,52" mappingExpression="msl://{gen}#CtoF_Request_Response_Mapping_C_to_F">
         <translation xmi:type="utility:ConstantString" string="Mapping C to F"/>
       </nodes>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_1" sourceNode="InTerminal.Input" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
