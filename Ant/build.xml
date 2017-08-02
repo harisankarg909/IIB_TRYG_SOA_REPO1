@@ -57,12 +57,12 @@
 		   
 		   <echo message="${drive.home}\Users\RELIANCE\Desktop\mqsi\${bar.name}" />
 		   
-			<exec executable="${drive.home}\Users\RELIANCE\Desktop\mqsi\mymqsideployscript2.bat" spawn="false" logError="true" vmlauncher="false" failonerror="true" append="true">
+			<exec executable="${drive.home}\IBM\mqsi\mymqsideployscript.bat" spawn="false" logError="true" vmlauncher="false" failonerror="true" append="true">
 				<arg value="${int.IIBoP.node}" />  
 				<arg value="-e" />
 			      <arg value="${int.IIBoP.server}" />
 			      <arg value="-a" />
-			      <arg value="${drive.home}\Program Files (x86)\Jenkins\workspace\IIB_DeployIIBoP\${bar.name}" />
+			      <arg value="${drive.home}\Jenkins_Slave\workspace\IIB_Deploy\${bar.name}" />
 			    </exec>
 		    <echo message="Completed deploying - ${bar.name} into Intergarion Node : ${int.IIBoP.node} under Integration Server : ${int.IIBoP.server}" />
 		  </target>
