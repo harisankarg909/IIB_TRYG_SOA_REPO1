@@ -11,11 +11,11 @@
 	<echo message="Bar file target Dir: ${drive.home}\temp\${bar.name} " />
   	<echo message="workspaces Dir: ${workspaces.dir} " />
     
-  	<exec executable="${drive.home}\Program Files\IBM\IIB\10.0.0.6\tools\mqsicreatebar.exe" spawn="false">
+  	<exec executable="${drive.home}\IBM\IIB\10.0.0.3\tools\mqsicreatebar.exe" spawn="false">
       <arg value="-data" />
-      <arg value="${drive.home}\Program Files (x86)\Jenkins\workspace\IIB_In" />
+      <arg value="${drive.home}\Jenkins_Slave\workspace\IIB_COMPILE" />
       <arg value="-b" />
-      <arg value="${drive.home}\Program Files (x86)\Jenkins\workspace\IIB_In\${bar.name}" />
+      <arg value="${drive.home}\Jenkins\workspace\IIB_COMPILE\${bar.name}" />
       <arg value="-a" />
       <arg value="${app.name}" />
       
